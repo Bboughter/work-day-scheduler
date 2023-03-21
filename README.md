@@ -19,7 +19,7 @@ N/A
 
 The work day scheduler is actively deployed at https://bboughter.github.io/work-day-scheduler/.
 
-To use this scheduler, click inside an hour block and type whatever information you would like to save for that time. The gray color indicates in the past, green in the present, and red in the future. You can refresh or leave the page and the information will still remain for you to view.
+To use this scheduler, click inside an hour block and type whatever information you would like to save for that time. The gray color indicates in the past, red in the present, and green in the future. You can refresh or leave the page and the information will still remain for you to view.
     
 
 ## Credits
