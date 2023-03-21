@@ -1,4 +1,4 @@
-
+//added a visable clock to the page 
 var clockElement = document.getElementById("clock");
 function updateClock(clock) {
   
@@ -8,6 +8,7 @@ setInterval(function () {
   updateClock(clockElement);
 }, 1000);
 
+//function for to start when the page loads that displays the current day
 $(document).ready(function () {
   var displayDate = dayjs();
   $('#currentDay').text(displayDate.format('MMM D, YYYY'));
@@ -17,7 +18,7 @@ $(document).ready(function () {
   $('.time-block').each(function () {
     var futureHour = parseInt($(this).attr('id').split('-')[1]);
    
-
+//if statement to determine color of block for past, present, and future times 
     if (futureHour < currentHour) {
       $(this).addClass('past');
     } else if (futureHour > currentHour) {
@@ -26,6 +27,8 @@ $(document).ready(function () {
       $(this).addClass('future');
     }
   })
+  
+  //function when the document loads 
   $(document).ready(function() {
     // Retrieve stored data and display it on the page
     $('.time-block').each(function() {
