@@ -1,7 +1,7 @@
 //added a visable clock to the page 
 var clockElement = document.getElementById("clock");
 function updateClock(clock) {
-  
+
   clock.innerHTML = new Date().toLocaleTimeString();
 }
 setInterval(function () {
@@ -17,8 +17,8 @@ $(document).ready(function () {
 
   $('.time-block').each(function () {
     var futureHour = parseInt($(this).attr('id').split('-')[1]);
-   
-//if statement to determine color of block for past, present, and future times 
+
+    //if statement to determine color of block for past, present, and future times 
     if (futureHour < currentHour) {
       $(this).addClass('past');
     } else if (futureHour > currentHour) {
@@ -27,20 +27,20 @@ $(document).ready(function () {
       $(this).addClass('future');
     }
   })
-  
+
   //function when the document loads 
-  $(document).ready(function() {
+  $(document).ready(function () {
     // Retrieve stored data and display it on the page
-    $('.time-block').each(function() {
+    $('.time-block').each(function () {
       var time = $(this).attr('id');
       var text = localStorage.getItem(time);
       if (text !== null) {
         $(this).children('.description').val(text);
       }
     });
-    
+
     // Save data to local storage when the Save button is clicked
-    $('.saveBtn').on('click', function(event) {
+    $('.saveBtn').on('click', function (event) {
       event.preventDefault();
       var text = $(this).siblings('.description').val();
       var time = $(this).parent().attr('id');
@@ -50,4 +50,4 @@ $(document).ready(function () {
 })
 
 
-      
+
