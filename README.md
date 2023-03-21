@@ -15,12 +15,14 @@ There is a built in clock, as well as one displayed, that changes the colors of 
 ## Installation
 
 N/A
+
 ## Usage
 
 The work day scheduler is actively deployed at https://bboughter.github.io/work-day-scheduler/.
 
 To use this scheduler, click inside an hour block and type whatever information you would like to save for that time. The gray color indicates in the past, red in the present, and green in the future. You can refresh or leave the page and the information will still remain for you to view.
-    
+
+![Screenshot 2023-03-21 114730](https://user-images.githubusercontent.com/113574704/226711167-4622e969-aa41-4133-bb56-3d199a60f11f.png)
 
 ## Credits
 
