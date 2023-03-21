@@ -11,7 +11,7 @@ setInterval(function () {
 //function for to start when the page loads that displays the current day
 $(document).ready(function () {
   var displayDate = dayjs();
-  $('#currentDay').text(displayDate.format('MMM D, YYYY'));
+  $('#currentDay').text(displayDate.format('dddd, MMMM D, YYYY'));
 
   var currentHour = dayjs().format('H');
 
